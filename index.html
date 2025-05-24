@@ -1,1 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soufyan Studios - Roblox Game Development</title>
+    <link rel="stylesheet" href="/style/main.css">
+</head>
+<body>
+    <div class="animated-bg"></div>
+    <div class="bg-shapes" id="shapes"></div>
 
+    <header>
+        <div class="logo-container">
+            <img src="./media/MainLogo.webp" alt="Soufyan Studios" class="logo-img">
+        </div>
+        <p class="tagline">Creating Amazing Roblox Experiences</p>
+        <nav>
+            <button class="nav-btn" onclick="scrollToSection('games')">Our Games</button>
+            <button class="nav-btn" onclick="scrollToSection('about')">About Us</button>
+            <button class="nav-btn" onclick="scrollToSection('contact')">Contact</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="games" class="section">
+            <h2 class="section-title">🎮 Our Games</h2>
+            <div class="games-grid">
+                <a href="./pages/charm.html" class="game-card">
+                    <h3 class="game-title">✨ Charm</h3>
+                    <p class="game-description">
+                        An enchanting adventure game where players explore magical worlds, 
+                        collect mystical charms, and unlock incredible powers. Experience 
+                        beautiful landscapes and engaging storylines in this captivating journey.
+                    </p>
+                    <span class="game-status">🚧 In Development</span>
+                </a>
+                <a href="./pages/unbound.html" class="game-card">
+                    <h3 class="game-title">🔓 Unbound</h3>
+                    <p class="game-description">
+                        Break free from the ordinary in this action-packed adventure! 
+                        Master unique abilities, overcome challenging obstacles, and 
+                        discover what it truly means to be unbound from limitations.
+                    </p>
+                    <span class="game-status">🚧 In Development</span>
+                </a>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <h2 class="section-title">🌟 About Soufyan Studios</h2>
+            <div class="about-content">
+                <p>
+                    Welcome to Soufyan Studios, where creativity meets innovation in the world of Roblox! 
+                    We are passionate game developers dedicated to creating immersive, fun, and memorable 
+                    experiences for players of all ages.
+                </p>
+                <br>
+                <p>
+                    Our mission is to push the boundaries of what's possible in Roblox, combining 
+                    cutting-edge gameplay mechanics with stunning visuals and engaging storylines. 
+                    Every game we create is crafted with love, attention to detail, and a commitment 
+                    to delivering the highest quality entertainment.
+                </p>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2 class="section-title">📞 Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <span class="contact-icon">🎮</span>
+                    <h3>Roblox</h3>
+                    <p>Follow us on Roblox for the latest updates and game releases!</p>
+                </div>
+                <div class="contact-card">
+                    <span class="contact-icon">💬</span>
+                    <h3>Discord</h3>
+                    <p>Join our community Discord server to connect with other players and get exclusive previews!</p>
+                </div>
+                <div class="contact-card">
+                    <span class="contact-icon">📧</span>
+                    <h3>Email</h3>
+                    <p>Reach out to us for business inquiries or collaboration opportunities!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Soufyan Studios. All rights reserved. Made with ❤️ from and for the Roblox community.</p>
+    </footer>
+
+    <script src="/code/main.js"></script>
+</body>
+</html>
