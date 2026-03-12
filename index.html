@@ -1,102 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-page="index">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soufyan Studios - Roblox Game Development</title>
-    <link rel="stylesheet" href="./style/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Skranji:wght@400;700&display=swap" rel="stylesheet">
-
-    <link rel="shortcut icon" href="./media/WebIcon.png" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soufyan Studios – Roblox Game Development</title>
+  <link rel="stylesheet" href="./style/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Skranji:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="./media/WebIcon.png" type="image/png">
 </head>
-<body>
-    <div class="animated-bg"></div>
-    <div class="bg-shapes" id="shapes"></div>
+<body data-page="index">
 
-    <header>
-        <div class="logo-container">
-            <img src="./media/MainLogo.png" alt="Soufyan Studios" class="logo-img">
-        </div>
-        <p class="tagline">Crafting Amazing Roblox Experiences</p>
-        <nav>
-            <button class="nav-btn" onclick="scrollToSection('games')">Our Games</button>
-            <button class="nav-btn" onclick="scrollToSection('about')">About Us</button>
-            <button class="nav-btn" onclick="scrollToSection('contact')">Contact</button>
-        </nav>
-    </header>
+  <!-- ── Aurora Background ─────────────────────────────────────── -->
+  <div id="aurora-layer">
+    <div id="aurora-blobs"></div>
+    <div id="star-field"></div>
+  </div>
 
-    <main>
-        <section id="games" class="section">
-            <h2 class="section-title">🎮 Our Games</h2>
-            <div class="games-grid">
-                <a href="./pages/charm.html" class="game-card">
-                    <h3 class="game-title">Charm</h3>
-                    <p class="game-description">
-                        An enchanting fighting game where players explore magical worlds, 
-                        obtain all sorts of magical abilities, and fight either monsters or eachother.
-                    </p>
-                    <span class="game-status">⏰ Release: 1st of June</span> <br>
-                    <small>👻 Developed by: Soufyan alone</small>
-                </a>
-                <a href="./pages/unbound.html" class="game-card">
-                    <h3 class="game-title">Unbound</h3>
-                    <p class="game-description">
-                        Break free from the ordinary in this action-packed adventure RPG! 
-                        Master unique abilities, overcome challenging enemies, and 
-                        discover what it truly means to be the most powerful sorcerer alive.
-                    </p>
-                    <span class="game-status">🚧 Development Paused till further notice</span> <br>
-                    <small>👥 Developed by: Soufyan Studios Development Team</small>
-                </a>
-            </div>
-        </section>
+  <!-- ── Header ────────────────────────────────────────────────── -->
+  <header>
+    <div class="logo-container">
+      <img src="./media/MainLogo.png" alt="Soufyan Studios" class="logo-img">
+    </div>
+    <p class="tagline">Crafting Amazing Roblox Experiences</p>
+    <nav>
+      <button class="nav-btn" onclick="scrollToSection('games')">Our Games</button>
+      <button class="nav-btn" onclick="scrollToSection('about')">About Us</button>
+      <button class="nav-btn" onclick="scrollToSection('contact')">Contact</button>
+    </nav>
+  </header>
 
-        <section id="about" class="section">
-            <h2 class="section-title">🌟 About Soufyan Studios</h2>
-            <div class="about-content">
-                <p>
-                    Welcome to Soufyan Studios, where creativity meets innovation in the world of Roblox! 
-                    We are passionate and sociable game developers dedicated to creating immersive, fun, and memorable 
-                    experiences for players of all ages.
-                </p>
-                <br>
-                <p>
-                    Our mission is to push the boundaries of what's possible in Roblox, combining 
-                    cutting-edge gameplay mechanics with stunning visuals and engaging storylines. 
-                    Every game we create is crafted with love, attention to detail, and a commitment 
-                    to delivering the highest quality entertainment.
-                </p>
-            </div>
-        </section>
+  <!-- ── Main ──────────────────────────────────────────────────── -->
+  <main>
 
-        <section id="contact" class="section">
-            <h2 class="section-title">📞 Get In Touch</h2>
-            <div class="contact-grid">
-                <a class="contact-card" href="https://www.roblox.com/communities/34930152/Soufyan-Studios#!/about" target="_blank" rel="noopener noreferrer">
-                    <span class="contact-icon">🎮</span>
-                    <h3>Roblox</h3>
-                    <p>Follow us on Roblox for the latest updates and game releases!</p>
-                </a>
-                <a class="contact-card" href="https://discord.gg/HxuXpeucfr" target="_blank" rel="noopener noreferrer">
-                    <span class="contact-icon">💬</span>
-                    <h3>Discord</h3>
-                    <p>Join our community Discord server to connect with other players and get exclusive previews!</p>
-                </a>
-                <a class="contact-card" href="https://www.roblox.com/users/732809577/profile" target="_blank" rel="noopener noreferrer">
-                    <span class="contact-icon">👤</span>
-                    <h3>Follow Soufbouf</h3>
-                    <p>Check me out on roblox and see my newest private creation Charm! Dont forget to follow me or i will tickle your otes tonight.</p>
-                </a>
-            </div>
-        </section>
-    </main>
+    <!-- Games -->
+    <section id="games" class="section">
+      <h2 class="section-title">🎮 Our Games</h2>
+      <div class="games-grid">
+        <a href="./pages/closeted.html" class="game-card">
+          <h3 class="game-title">Closeted</h3>
+          <p class="game-description">
+            A psychological horror game with endless room generation.
+            Fight bossbattles and monsters in this game inspired by doors.
+            Filled with queer symbolism
+          </p>
+          <span class="game-status">⚒️ Currently in development</span><br>
+          <small>👥 Developed by: Soufyan Studios Development Team</small>
+        </a>
 
-    <footer>
-        <p>&copy; <span id="currentYear"></span> Soufyan Studios. All rights reserved. Made with ❤️ from and for the Roblox community.</p>
-    </footer>
+        <a href="./pages/charm.html" class="game-card">
+          <h3 class="game-title">Charm</h3>
+          <p class="game-description">
+            An enchanting fighting game where players explore magical worlds,
+            obtain all sorts of magical abilities, and fight either monsters or each other.
+          </p>
+          <span class="game-status">⏰ Released: 1st of June 2025</span><br>
+          <small>👻 Developed by: Soufyan alone</small>
+        </a>
 
-    <script src="./code/main.js"></script>
+        <a href="./pages/unbound.html" class="game-card">
+          <h3 class="game-title">Unbound</h3>
+          <p class="game-description">
+            Break free from the ordinary in this action-packed adventure RPG!
+            Master unique abilities, overcome challenging enemies, and
+            discover what it truly means to be the most powerful sorcerer alive.
+          </p>
+          <span class="game-status">🚧 Development Paused till further notice</span><br>
+          <small>👥 Developed by: Soufyan Studios Development Team</small>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <h2 class="section-title">🌟 About Soufyan Studios</h2>
+      <div class="about-content">
+        <p>
+          Welcome to Soufyan Studios, where creativity meets innovation in the world of Roblox!
+          We are passionate and sociable game developers dedicated to creating immersive, fun, and memorable
+          experiences for players of all ages.
+        </p>
+        <br>
+        <p>
+          Our mission is to push the boundaries of what's possible in Roblox, combining
+          cutting-edge gameplay mechanics with stunning visuals and engaging storylines.
+          Every game we create is crafted with love, attention to detail, and a commitment
+          to delivering the highest quality entertainment.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <h2 class="section-title">📞 Get In Touch</h2>
+      <div class="contact-grid">
+
+        <a class="contact-card"
+           href="https://www.roblox.com/communities/34930152/Soufyan-Studios#!/about"
+           target="_blank" rel="noopener noreferrer">
+          <span class="contact-icon">🎮</span>
+          <h3>Roblox</h3>
+          <p>Follow us on Roblox for the latest updates and game releases!</p>
+        </a>
+
+        <a class="contact-card"
+           href="https://discord.gg/HxuXpeucfr"
+           target="_blank" rel="noopener noreferrer">
+          <span class="contact-icon">💬</span>
+          <h3>Discord</h3>
+          <p>Join our community Discord server to connect with other players and get exclusive previews!</p>
+        </a>
+
+        <a class="contact-card"
+           href="https://www.roblox.com/users/732809577/profile"
+           target="_blank" rel="noopener noreferrer">
+          <span class="contact-icon">👤</span>
+          <h3>Follow Soufbouf</h3>
+          <p>Check me out on Roblox and see my newest private creation Charm! Don't forget to follow me or I will tickle your toes tonight.</p>
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentYear"></span> Soufyan Studios. All rights reserved. Made with ❤️ from and for the Roblox community.</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+  <script>gsap.registerPlugin(ScrollToPlugin);</script>
+  <script src="./code/data.js"></script>
+  <script src="./code/main.js"></script>
 </body>
 </html>

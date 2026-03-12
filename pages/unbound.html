@@ -1,146 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unbound - Soufyan Studios</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Skranji:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../style/unbound.css">
-
-    <link rel="shortcut icon" href="./media/WebIcon.png" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unbound – Soufyan Studios</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Skranji:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style/unbound.css">
+  <link rel="shortcut icon" href="../media/WebIcon.png" type="image/png">
 </head>
-<body>
-    <div class="animated-bg"></div>
-    <div class="tech-elements" id="techElements"></div>
+<body data-page="unbound">
 
-    <header>
-        <nav class="nav-bar">
-            <img src="../media/unbound/UnboundIcon.png" alt="Soufyan Studios" class="logo-img">
-            <a href="../" class="back-btn">← Back to Home</a>
-        </nav>
-    </header>
+  <!-- ── Aurora Background ─────────────────────────────────────── -->
+  <div id="aurora-layer">
+    <div id="aurora-blobs"></div>
+    <div id="star-field"></div>
+  </div>
 
-    <div class="game-header">
-        <h1 class="game-title">🔓 Unbound</h1>
-        <p class="game-subtitle">Discover the endless possibilities of your magic</p>
-        <div class="status-badge">🚧 Development Currently Paused</div>
-    </div>
+  <!-- ── Header ────────────────────────────────────────────────── -->
+  <header>
+    <nav class="nav-bar">
+      <img src="../media/unbound/UnboundIcon.png" alt="Unbound – Soufyan Studios" class="logo-img">
+      <a href="../" class="back-btn">← Back to Home</a>
+    </nav>
+  </header>
 
-    <main>
-        <section class="section">
-            <h2 class="section-title">⚡ About Unbound</h2>
-            <div class="game-info">
-                <p>
-                    Unbound is an action-packed adventure game that challenges players to discover the possibilities of an immense open-world game. 
-                    Master unique abilities, overcome dynamic obstacles, and defeat powerful enemies.
-                </p>
-                <br>
-                <p>
-                    With fluid movement mechanics, innovative power systems, and challenging platforming sections, 
-                    Unbound offers an experience that constantly evolves and adapts to your playstyle. 
-                    Every corner of the world holds new adventures and experiences to face alone or with your friends.
-                </p>
+  <!-- ── Game Hero ──────────────────────────────────────────────── -->
+  <div class="game-header">
+    <h1 class="game-title">🔓 Unbound</h1>
+    <p class="game-subtitle">Discover the endless possibilities of your magic.</p>
+    <div class="status-badge">🚧 Development Currently Paused</div>
+  </div>
+
+  <!-- ── Main ──────────────────────────────────────────────────── -->
+  <main>
+
+    <section class="section">
+      <h2 class="section-title">⚡ About Unbound</h2>
+      <div class="game-info">
+        <p>
+          Unbound is an action-packed adventure game that challenges players to discover the possibilities
+          of an immense open-world game.
+          Master unique abilities, overcome dynamic obstacles, and defeat powerful enemies.
+        </p>
+        <br>
+        <p>
+          With fluid movement mechanics, innovative power systems, and challenging platforming sections,
+          Unbound offers an experience that constantly evolves and adapts to your playstyle.
+          Every corner of the world holds new adventures and experiences to face alone or with your friends.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">🙌 Latest Reveals & Updates</h2>
+      <div class="reveals-grid">
+
+        <div class="reveal-card">
+          <div class="reveal-date">February 3, 2025</div>
+          <h3 class="reveal-title">🎮 Visuals 2</h3>
+          <div class="reveal-content">
+            <p>Here we see the water energy pillar doing its thing — its use in exploration is to change bodies of water.</p>
+            <p>In this example it created an air pocket for the character to breathe in.</p>
+            <img class="revealed-media" src="../media/unbound/WaterPillar.png" alt="Water Pillar of the game Unbound created by Soufyan Studios">
+          </div>
+        </div>
+
+        <div class="reveal-card">
+          <div class="reveal-date">December 25, 2024</div>
+          <h3 class="reveal-title">🎮 Control Revolution</h3>
+          <div class="reveal-content">
+            <p>We're redefining how movement feels in Roblox games. Our custom control system offers unprecedented precision and fluidity, making every action feel responsive and intuitive.</p>
+            <p>Our subtle jumping and running system does miracles on our custom rigs, and redefines the normal blocky look of Roblox games.</p>
+            <img class="revealed-media" src="../media/unbound/UnboundRigs.png" alt="Rigs Avatars of the game Unbound created by Soufyan Studios">
+          </div>
+        </div>
+
+        <div class="reveal-card">
+          <div class="reveal-date">November 27, 2024</div>
+          <h3 class="reveal-title">⚡ Power System Deep Dive</h3>
+          <div class="reveal-content">
+            <p>Get ready to unleash incredible abilities! Our power system lets players combine different energy types to create unique combat techniques.</p>
+            <p>Chain together the air and fire element to create explosions from your magical energy alone! Each element offers its own effects when mixed with certain other elements.</p>
+            <img class="revealed-media" src="../media/unbound/UnboundElementalReactions.png" alt="Combat elemental reactions of the game Unbound created by Soufyan Studios">
+          </div>
+        </div>
+
+        <div class="reveal-card">
+          <div class="reveal-date">November 20, 2024</div>
+          <h3 class="reveal-title">🎮 Visuals 1</h3>
+          <div class="reveal-content">
+            <p>Here you can see a snapshot of the mountain at the edge of the map and 2 characters to show you its grand scale.</p>
+            <p>The wind current holding up the flying island on top of the mountain is capable of carrying players through the hole in the middle.</p>
+            <div class="video-container">
+              <iframe src="https://player.vimeo.com/video/1029428275?badge=0&autopause=0&player_id=0&app_id=58479"
+                      frameborder="0"
+                      allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                      title="SunsetBigMountain">
+              </iframe>
             </div>
-        </section>
+          </div>
+        </div>
 
-        <section class="section">
-            <h2 class="section-title">🙌 Latest Reveals & Updates</h2>
-            <div class="reveals-grid">
-                <div class="reveal-card">
-                    <div class="reveal-date">February 3, 2025</div>
-                    <h3 class="reveal-title">🎮 Visuals 2</h3>
-                    <div class="reveal-content">
-                        <p>Here we see the water energy pillar doing its thing, its use in exploration is to change bodies of water.</p>
-                        <p>In this example it created an air pocket for the character to breathe in.</p>
-                        <img class="revealed-media" src="../media/unbound/WaterPillar.png" alt="Water Pillar of the game Unbound created by Soufyan Studios">
-                    </div>
-                </div>
-                <div class="reveal-card">
-                    <div class="reveal-date">December 25, 2024</div>
-                    <h3 class="reveal-title">🎮 Control Revolution</h3>
-                    <div class="reveal-content">
-                        <p>We're redefining how movement feels in Roblox games. Our custom control system offers unprecedented precision and fluidity, making every action feel responsive and intuitive.</p>
-                        <p>Our subtle jumping and running system does miracles on our custom rigs, and redefines the normal blocky look of roblox games.</p>
-                        <img class="revealed-media" src="../media/unbound/UnboundRigs.png" alt="Rigs Avatars of the game Unbound created by Soufyan Studios">
-                    </div>
-                </div>
-                <div class="reveal-card">
-                    <div class="reveal-date">November 27, 2024</div>
-                    <h3 class="reveal-title">⚡ Power System Deep Dive</h3>
-                    <div class="reveal-content">
-                        <p>Get ready to unleash incredible abilities! Our power system lets players combine different energy types to create unique combat techniques.</p>
-                        <p>Chain together the air and fire element to create explosions from your magical energy alone! Each element offers its own effects when mixed with certain other elements.</p>
-                        <img class="revealed-media" src="../media/unbound/UnboundElementalReactions.png" alt="Combat elemental reactions of the game Unbound created by Soufyan Studios">
-                    </div>
-                </div>
-                <div class="reveal-card">
-                    <div class="reveal-date">November 20, 2024</div>
-                    <h3 class="reveal-title">🎮 Visuals 1</h3>
-                    <div class="reveal-content">
-                        <p>Here you can see a snapshot of the mountain at the edge of the map and 2 characters to show you its grand scale.</p>
-                        <p>The wind current holding up the flying island on top of the mountain is capable of carrying players through the hole in the middle.</p>
-                        <div class="video-container">
-                            <iframe src="https://player.vimeo.com/video/1029428275?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
-                                    frameborder="0" 
-                                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" 
-                                    title="SunsetBigMountain">
-                            </iframe>
-                        </div>
-                    </div>
-                </div>
-                <div class="reveal-card">
-                    <div class="reveal-date">November 19, 2024</div>
-                    <h3 class="reveal-title">🌃 Urban Playground Preview</h3>
-                    <div class="reveal-content">
-                        <p>Take a small look into the size of the map before anything is placed except for the terrain itself. Look at the floating islands, held up by pillars of air energy.</p>
-                        <p>Look at the mountain on the edge of this island holding a powerful air current to help players reach its top.</p>
-                        <img class="revealed-media" src="../media/unbound/UnboundMapBeta.png" alt="Beta Map of the game Unbound created by Soufyan Studios">
-                    </div>
-                </div>
+        <div class="reveal-card">
+          <div class="reveal-date">November 19, 2024</div>
+          <h3 class="reveal-title">🌃 Urban Playground Preview</h3>
+          <div class="reveal-content">
+            <p>Take a small look into the size of the map before anything is placed except for the terrain itself. Look at the floating islands, held up by pillars of air energy.</p>
+            <p>Look at the mountain on the edge of this island holding a powerful air current to help players reach its top.</p>
+            <img class="revealed-media" src="../media/unbound/UnboundMapBeta.png" alt="Beta Map of the game Unbound created by Soufyan Studios">
+          </div>
+        </div>
 
-                <div class="reveal-card">
-                    <div class="reveal-date">November 11, 2024</div>
-                    <h3 class="reveal-title">🎨 Visual Identity</h3>
-                    <div class="reveal-content">
-                        <p>Unbound's visual style is very unique, and playful. Unbound holds a unique position for Soufyan Studios as a deeply cherished project that will ask for a lot of constant work and creativity.</p>
-                        <p>Every visual element is designed to enhance the feeling of freedom and power, from the sleek UI to the energetic particle trails that follow your movement, Unbound is unique and focuses on the freedom of the player.</p>
-                        <img class="revealed-media" src="../media/unbound/UnboundTut.png" alt="Unbound visual style and tutorial world created by Soufyan Studios">
-                    </div>
-                </div>
+        <div class="reveal-card">
+          <div class="reveal-date">November 11, 2024</div>
+          <h3 class="reveal-title">🎨 Visual Identity</h3>
+          <div class="reveal-content">
+            <p>Unbound's visual style is very unique and playful. Unbound holds a unique position for Soufyan Studios as a deeply cherished project that will ask for a lot of constant work and creativity.</p>
+            <p>Every visual element is designed to enhance the feeling of freedom and power — from the sleek UI to the energetic particle trails that follow your movement.</p>
+            <img class="revealed-media" src="../media/unbound/UnboundTut.png" alt="Unbound visual style and tutorial world created by Soufyan Studios">
+          </div>
+        </div>
 
-                <div class="reveal-card">
-                    <div class="reveal-date">November 8, 2024</div>
-                    <h3 class="reveal-title">🚀 Project Announcement</h3>
-                    <div class="reveal-content">
-                        <p>We're proud to announce Unbound - our most ambitious project yet! This game represents our vision of what movement, power and freedom can feel like in a virtual space.</p>
-                        <p>Development will take a while as a game like this will take time and effort. However we're excited to share this journey with our community and experience the power of creation firsthand. Get ready to experience an Open-World RPG game unlike any other!</p>
-                        <img class="revealed-media" src="../media/unbound/UnboundIcon.png" alt="Logo of the game Unbound created by Soufyan Studios">
-                    </div>
-                </div>
-            </div>
-        </section>
+        <div class="reveal-card">
+          <div class="reveal-date">November 8, 2024</div>
+          <h3 class="reveal-title">🚀 Project Announcement</h3>
+          <div class="reveal-content">
+            <p>We're proud to announce Unbound — our most ambitious project yet! This game represents our vision of what movement, power and freedom can feel like in a virtual space.</p>
+            <p>Development will take a while as a game like this will take time and effort. However we're excited to share this journey with our community. Get ready to experience an Open-World RPG unlike any other!</p>
+            <img class="revealed-media" src="../media/unbound/UnboundIcon.png" alt="Logo of the game Unbound created by Soufyan Studios">
+          </div>
+        </div>
 
-        <section class="section">
-            <h2 class="section-title">🎯 Key Features</h2>
-            <div class="game-info">
-                <div class="features-list">
-                    <p><strong>⚡ Dynamic Movement:</strong> Custom movement system separate from that of Roblox, offering unprecedented fluidity and precision.</p>
-                    <p><strong>👤 Custom Rigs:</strong> The rigs are unlike any other seen in Roblox before, breaking away from the traditional blocky aesthetic.</p>
-                    <p><strong>🥊 Interactive Combat System:</strong> Mixing certain elements together create their own unique effects and combinations.</p>
-                    <p><strong>🌍 Massive Open World:</strong> Explore vast landscapes with floating islands, mystical mountains, and hidden secrets.</p>
-                    <p><strong>🎭 Multiplayer Experience:</strong> Face challenges alone or team up with friends for epic adventures.</p>
-                    <p><strong>🔮 Elemental Magic:</strong> Master air, fire, water, and earth elements with endless combination possibilities.</p>
-                </div>
-            </div>
-        </section>
-    </main>
+      </div>
+    </section>
 
-    <footer>
-        <p>&copy; <span id="currentYear"></span> Soufyan Studios. All rights reserved. Made with ❤️ from and for the Roblox community.</p>
-    </footer>
+    <section class="section">
+      <h2 class="section-title">🎯 Key Features</h2>
+      <div class="game-info">
+        <div class="features-list">
+          <p><strong>⚡ Dynamic Movement:</strong> Custom movement system separate from that of Roblox, offering unprecedented fluidity and precision.</p>
+          <p><strong>👤 Custom Rigs:</strong> The rigs are unlike any other seen in Roblox before, breaking away from the traditional blocky aesthetic.</p>
+          <p><strong>🥊 Interactive Combat System:</strong> Mixing certain elements together creates unique effects and combinations.</p>
+          <p><strong>🌍 Massive Open World:</strong> Explore vast landscapes with floating islands, mystical mountains, and hidden secrets.</p>
+          <p><strong>🎭 Multiplayer Experience:</strong> Face challenges alone or team up with friends for epic adventures.</p>
+          <p><strong>🔮 Elemental Magic:</strong> Master air, fire, water, and earth elements with endless combination possibilities.</p>
+        </div>
+      </div>
+    </section>
 
-    <script src="../code/main.js"></script>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentYear"></span> Soufyan Studios. All rights reserved. Made with ❤️ from and for the Roblox community.</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+  <script>gsap.registerPlugin(ScrollToPlugin);</script>
+  <script src="../code/data.js"></script>
+  <script src="../code/main.js"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 /* ────────────────────────────────────────────────────────────────
-   unbound.css  —  Soufyan Studios  —  Unbound Game Page
+   charm.css  —  Soufyan Studios  —  Charm Game Page
    ──────────────────────────────────────────────────────────────── */
 
 @import url('https://fonts.googleapis.com/css2?family=Skranji:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
@@ -7,16 +7,16 @@
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
 :root {
-  --bg:          #07091a;
-  --purple:      #7209b7;
-  --indigo:      #2d46b9;
-  --cyan:        #00d4ff;
-  --purple-glow: rgba(114,9,183,0.3);
-  --cyan-glow:   rgba(0,212,255,0.22);
-  --text:        #e4eeff;
-  --text-muted:  rgba(180,200,255,0.6);
-  --glass:       rgba(7,9,26,0.6);
-  --glass-border:rgba(114,9,183,0.15);
+  --bg:          #1e0a0a;
+  --amber:       #ff1515;
+  --violet:      #fb3b3b;
+  --pink:        #ff7575;
+  --amber-glow:  rgba(255, 56, 56, 0.3);
+  --violet-glow: rgba(251, 59, 59, 0.25);
+  --text:        #ffe8e8;
+  --text-muted:  rgba(255, 200, 200, 0.65);
+  --glass:       rgba(32, 6, 6, 0.6);
+  --glass-border:rgba(251, 59, 59, 0.14);
   --radius-lg:   22px;
   --radius-md:   14px;
   --transition:  0.35s cubic-bezier(.4,0,.2,1);
@@ -40,7 +40,7 @@ body {
   z-index: 0;
   pointer-events: none;
   overflow: hidden;
-  background: radial-gradient(ellipse 120% 80% at 50% 0%, #111440 0%, var(--bg) 70%);
+  background: radial-gradient(ellipse 120% 80% at 50% 0%, #320808 0%, var(--bg) 70%);
 }
 
 #aurora-blobs {
@@ -73,7 +73,7 @@ header {
   position: relative;
   z-index: 10;
   padding: 1.4rem 2rem;
-  background: rgba(7,9,26,0.7);
+  background: rgba(32, 6, 6, 0.65);
   backdrop-filter: blur(22px) saturate(1.5);
   -webkit-backdrop-filter: blur(22px) saturate(1.5);
   border-bottom: 1px solid var(--glass-border);
@@ -92,21 +92,20 @@ header {
 .logo-img {
   max-width: 180px;
   height: auto;
-  border-radius: 8px;
-  filter: drop-shadow(0 0 16px var(--purple-glow));
+  filter: drop-shadow(0 0 18px var(--violet-glow));
   transition: filter var(--transition), transform var(--transition);
 }
 .logo-img:hover {
-  filter: drop-shadow(0 0 28px var(--purple-glow));
+  filter: drop-shadow(0 0 32px var(--violet-glow));
   transform: scale(1.05);
 }
 
 .back-btn {
   padding: 0.65rem 1.6rem;
-  background: rgba(114,9,183,0.12);
-  border: 1px solid rgba(114,9,183,0.38);
+  background: rgba(251, 59, 59, 0.1);
+  border: 1px solid rgba(251, 59, 59, 0.35);
   border-radius: 100px;
-  color: #a78bfa;
+  color: var(--pink);
   font-family: inherit;
   font-size: 0.9rem;
   font-weight: 600;
@@ -117,8 +116,8 @@ header {
   white-space: nowrap;
 }
 .back-btn:hover {
-  background: rgba(114,9,183,0.25);
-  box-shadow: 0 0 20px var(--purple-glow);
+  background: rgba(251, 59, 59, 0.22);
+  box-shadow: 0 0 20px var(--violet-glow);
   transform: translateY(-2px);
   color: #fff;
 }
@@ -129,7 +128,7 @@ header {
   z-index: 5;
   text-align: center;
   padding: 5rem 2rem 4rem;
-  background: rgba(7,9,26,0.3);
+  background: rgba(32, 6, 6, 0.35);
   backdrop-filter: blur(10px);
 }
 
@@ -138,15 +137,15 @@ header {
   font-size: clamp(2.5rem, 7vw, 5rem);
   font-weight: 700;
   margin-bottom: 1rem;
-  background: linear-gradient(135deg, var(--purple) 0%, var(--indigo) 50%, var(--cyan) 100%);
+  background: linear-gradient(135deg, var(--pink) 0%, var(--amber) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   animation: titleGlow 4s ease-in-out infinite alternate;
 }
 @keyframes titleGlow {
-  from { filter: drop-shadow(0 0 12px rgba(114,9,183,0.45)); }
-  to   { filter: drop-shadow(0 0 28px rgba(0,212,255,0.45)); }
+  from { filter: drop-shadow(0 0 12px rgba(255, 117, 117, 0.4)); }
+  to   { filter: drop-shadow(0 0 30px rgba(255, 56, 56, 0.5)); }
 }
 
 .game-subtitle {
@@ -164,18 +163,18 @@ header {
 .status-badge {
   display: inline-block;
   padding: 0.8rem 2rem;
-  background: linear-gradient(90deg, rgba(114,9,183,0.22), rgba(45,70,185,0.15));
-  border: 1px solid rgba(114,9,183,0.4);
+  background: linear-gradient(90deg, rgba(251, 59, 59, 0.25), rgba(255, 56, 56, 0.15));
+  border: 1px solid rgba(251, 59, 59, 0.4);
   border-radius: 100px;
   font-weight: 700;
   font-size: 1rem;
-  color: #a78bfa;
+  color: var(--amber);
   animation: subtlePulse 3s ease-in-out infinite;
-  box-shadow: 0 0 24px rgba(114,9,183,0.2);
+  box-shadow: 0 0 24px rgba(251, 59, 59, 0.2);
 }
 @keyframes subtlePulse {
-  0%, 100% { box-shadow: 0 0 20px rgba(114,9,183,0.15); }
-  50%       { box-shadow: 0 0 36px rgba(114,9,183,0.35); }
+  0%, 100% { box-shadow: 0 0 20px rgba(251, 59, 59, 0.15); }
+  50%       { box-shadow: 0 0 36px rgba(251, 59, 59, 0.35); }
 }
 
 /* ── Main ────────────────────────────────────────────────────────── */
@@ -196,7 +195,7 @@ main {
   backdrop-filter: blur(20px) saturate(1.4);
   -webkit-backdrop-filter: blur(20px) saturate(1.4);
   border: 1px solid var(--glass-border);
-  box-shadow: 0 8px 48px rgba(0,0,0,0.55), inset 0 1px 0 rgba(114,9,183,0.08);
+  box-shadow: 0 8px 48px rgba(0,0,0,0.5), inset 0 1px 0 rgba(251, 59, 59, 0.08);
 }
 
 .section-title {
@@ -204,11 +203,11 @@ main {
   font-size: clamp(1.6rem, 3.5vw, 2.4rem);
   text-align: center;
   margin-bottom: 2.2rem;
-  background: linear-gradient(135deg, var(--purple) 0%, var(--indigo) 50%, var(--cyan) 100%);
+  background: linear-gradient(135deg, var(--violet) 0%, var(--amber) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  filter: drop-shadow(0 0 10px rgba(114,9,183,0.25));
+  filter: drop-shadow(0 0 10px rgba(251, 59, 59, 0.25));
 }
 
 /* ── Reveals Grid ───────────────────────────────────────────────── */
@@ -220,7 +219,7 @@ main {
 }
 
 .reveal-card {
-  background: rgba(10,5,30,0.75);
+  background: rgba(40, 5, 5, 0.75);
   border-radius: var(--radius-md);
   padding: 2rem;
   border: 1px solid var(--glass-border);
@@ -232,20 +231,20 @@ main {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(114,9,183,0.07) 0%, transparent 60%);
+  background: linear-gradient(135deg, rgba(251, 59, 59, 0.06) 0%, transparent 60%);
   opacity: 0;
   transition: opacity var(--transition);
   border-radius: inherit;
 }
 .reveal-card:hover {
   transform: translateY(-8px);
-  border-color: rgba(114,9,183,0.5);
-  box-shadow: 0 24px 48px rgba(0,0,0,0.55), 0 0 32px rgba(114,9,183,0.15);
+  border-color: rgba(251, 59, 59, 0.45);
+  box-shadow: 0 24px 48px rgba(11, 0, 0, 0.5), 0 0 32px rgba(251, 59, 59, 0.12);
 }
 .reveal-card:hover::after { opacity: 1; }
 
 .reveal-date {
-  color: var(--cyan);
+  color: var(--amber);
   font-size: 0.82rem;
   font-weight: 700;
   letter-spacing: 0.06em;
@@ -255,7 +254,7 @@ main {
 .reveal-title {
   font-size: 1.25rem;
   font-weight: 700;
-  color: #a78bfa;
+  color: var(--pink);
   margin-bottom: 0.9rem;
 }
 .reveal-content {
@@ -271,12 +270,12 @@ main {
   height: auto;
   display: block;
   border-radius: var(--radius-md);
-  border: 1px solid rgba(114,9,183,0.2);
+  border: 1px solid rgba(251, 59, 59, 0.2);
   transition: all var(--transition);
 }
 .revealed-media:hover {
   transform: scale(1.02);
-  box-shadow: 0 12px 32px rgba(114,9,183,0.25);
+  box-shadow: 0 12px 32px rgba(251, 59, 59, 0.2);
 }
 
 .video-container {
@@ -285,7 +284,7 @@ main {
   margin-top: 1.2rem;
   border-radius: var(--radius-md);
   overflow: hidden;
-  border: 1px solid rgba(114,9,183,0.2);
+  border: 1px solid rgba(251, 59, 59, 0.2);
 }
 .video-container iframe {
   position: absolute;
@@ -309,15 +308,15 @@ main {
 .features-list p {
   margin-bottom: 0.9rem;
   padding: 1rem 1.2rem;
-  background: rgba(114,9,183,0.08);
+  background: rgba(214,59,251,0.07);
   border-radius: 10px;
-  border-left: 3px solid var(--purple);
+  border-left: 3px solid var(--violet);
   color: var(--text-muted);
   font-size: 0.95rem;
   transition: background var(--transition);
 }
 .features-list p:hover {
-  background: rgba(114,9,183,0.15);
+  background: rgba(251, 59, 59, 0.13);
 }
 
 /* ── Footer ──────────────────────────────────────────────────────── */
@@ -326,7 +325,7 @@ footer {
   z-index: 5;
   text-align: center;
   padding: 2rem;
-  background: rgba(7,9,26,0.85);
+  background: rgba(32, 6, 6, 0.85);
   backdrop-filter: blur(20px);
   border-top: 1px solid var(--glass-border);
   color: var(--text-muted);
